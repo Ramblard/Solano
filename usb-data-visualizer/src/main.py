@@ -7,7 +7,6 @@ from pyqtgraph.Qt import QtCore, QtWidgets
 usb_port = 'COM4'  # Change this to your USB port
 baud_rate = 230400
 ser = serial.Serial(usb_port, baud_rate)
-ser.set_buffer_size(rx_size=30000, tx_size=30000)
 
 # Prepare data storage
 data_fields = [
